@@ -44,8 +44,8 @@ class LinkedinSearchSpider(CrawlSpider):
 		csrfToken = sel.xpath('//input[@name="csrfToken"]/@value').extract()[0].encode("utf-8")
 		sourceAlias = sel.xpath('//input[@name="sourceAlias"]/@value').extract()[0].encode("utf-8")
 		
-		session_key = 'resec0109@gmail.com'
-		session_password = 'reseclyy0109'
+		session_key = '*************'
+		session_password = '***********'
 		client_ts = int(round(time.time() * 1000))
 		client_n = [int(9E8 * random.random() + 1E8), int(9E8 * random.random() + 1E8), int(9E8 * random.random() + 1E8)]
 		client_output = self.cal_client_output(client_n, session_key, client_ts)
